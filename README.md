@@ -14,7 +14,7 @@ Criei este cronômetro com o objetivo de me ajudar nos meus estudos, marcando o 
 
 ## 💻 Interface
 
-![Imagem do Cronômetro](./image.png)
+![Imagem do Cronômetro](./image.png.png)
 
 > A imagem acima mostra o layout da aplicação com os botões e o tempo correndo.
 
