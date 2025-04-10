@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempo de Estudo</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/time-tracking.png"/>
+    <!--link css-->
+      <link rel="stylesheet" href="./assets/css/style.css"/>
+      <link rel="stylesheet" href="./assets/css/media.css"/>
+      <link rel="stylesheet" href="./assets/css/resete.css">
+    <!---->
+</head>
+   <!-- SweetAlert2 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<body>
+
+
+     <main>
+
+        <audio id="sound" src="./assets/audio/alarm.mp3" style="display: none;"></audio>
+  
+        <div class="title-project">
+           <h2>Tempo de Estudo⏱️</h2>
+        </div>
+   
+        <div class="image-content">
+           <img src="./assets/img/cronometro.png" alt="cronometro"/>
+   
+           <div class="display" id="display">
+               <h3>00:00:00</h3>
+           </div>
+   
+        </div>
+   
+        <div class="container-bg">
+   
+           <div class="box-one">
+               <div class="title-hours">
+                   <h2>Horas <span>:</span></h2>
+               </div>
+   
+               <select name="hours" id="hours"></select>
+   
+           </div>
+   
+            <div class="box-two">
+               <div class="title-minutes">
+                   <h2>Minutos <span>:</span></h2>
+               </div>
+               <select name="minutes" id="minutes"></select>
+            </div>
+   
+           <div class="box-tree">
+               <div class="title-seconds">
+                   <h2>Segundos <span>:</span></h2>
+               </div>
+       
+               <select name="seconds" id="seconds"></select>
+           </div>
+   
+        </div>
+   
+        <div class="button-wrapper">
+           <button id="start">começar</button>
+           <button id="pause">Pausar</button>
+           <button id="reset">Resetar</button>
+        </div>
+
+     </main>
+ 
+    <!--script JS-->
+    <script src="./assets/js/script.js"></script>
+    <!---->
+</body>
+</html>
+
+
+
