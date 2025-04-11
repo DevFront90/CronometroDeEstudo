@@ -6,6 +6,7 @@ let seconds = document.getElementById('seconds');
 let start = document.getElementById('start');
 let pause= document.getElementById('pause');
 let reset = document.getElementById('reset');
+let audio = document.getElementById('sound');
 //
 
 // Variáveis que irão armazenar os valores escolhidos pelo usuário
@@ -30,7 +31,24 @@ for(var i = 0; i < 60; i++) {  // Adiciona de 0 a 60 para os segundos
 }
 
 start.addEventListener('click', function() { //botão iniciar //
+     
      if(interval) return;  // Evita múltiplos intervalos //
+
+
+       audio.load();
+    audio.play().then( () => {
+        audio.pause();
+        audio.currentTime = 0;
+    }).catch((erro => {
+
+        Swal.fire({
+            icon: 'info',
+            title: 'Autoplay bloqueado',
+            text: 'O navegador bloqueou a reprodução automática. O alarme tocará normalmente no final do cronômetro.',
+            confirmButtonColor: '#eb2d2d'
+        });
+        
+    }));
 
      // Se não estiver pausado, pega os valores dos selects //
 
