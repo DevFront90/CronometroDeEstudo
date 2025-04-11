@@ -141,6 +141,9 @@ reset.addEventListener('click',function() {
     hours.value = 0;
     minutes.value = 0;
     seconds.value = 0;
+    // Parar o alarme se estiver tocando //
+    audio.pause();
+    audio.currentTime = 0;
 
     Swal.fire({
         icon: 'question',
